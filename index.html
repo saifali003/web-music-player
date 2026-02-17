@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+    <main id="music-player-container">
+        <div id="music-player">
+
+            <img id="track-image" src="" alt="album">
+
+            <div class="bottom-section">
+
+                <h3 id="track-name">Loading...</h3>
+
+                <input id="progress" type="range" value="0">
+
+                <div class="btns">
+                    <i id="prev" class="fa-solid fa-backward"></i>
+
+                    <span id="play-btn">
+                        <i id="play-icon" class="fa-solid fa-play"></i>
+                    </span>
+
+                    <i id="next" class="fa-solid fa-forward"></i>
+                </div>
+
+                <input id="volume" type="range" value="50">
+            </div>
+        </div>
+
+        <span id="collapse-expand">
+            <i id="expand-icon" class="fa-solid fa-arrow-right"></i>
+        </span>
+
+    </main>
+
+    <aside id="songs-list-container">
+        <h3>Playlist</h3>
+        <div id="songs-list"></div>
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
